@@ -13,8 +13,6 @@ import networkx as nx
 def read_data(path):
 
     full_dataset = pd.read_sas(path, encoding="latin-1")
-    #with SAS7BDAT('cchc_v2.sas7bdat', skip_header=False) as reader:
-    #    full_dataset = reader.to_data_frame()
     new_data = full_dataset[['RRID', 'STUDY', 'AGE', 'BMI', 'HIGHBP', 'HI_CHOL', 'FADIAB', 'MODIAB',
                              'SMOKENOW', 'DIABETIC', 'FABP', 'MCORRSYS', 'MCORRDIA', 'MMSE_SCORE', 'GENDER']]
     new_data = new_data[new_data['STUDY'] == 'BASELINE']
@@ -29,7 +27,6 @@ def read_data(path):
 
 
 def categorize_data(data):
-
 
     conditions_obese = [
     (data['BMI'] <= 3),
