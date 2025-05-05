@@ -166,6 +166,9 @@ pip install tensorflow numpy pandas networkx scikit-learn matplotlib
 
 ## 🧩 Notes
 
+- You **must** preprocess your own dataset to match the variable names, formats, and encodings described above.
+- Feel free to modify `categorize_data()` to support different encodings or additional preprocessing rules.
+- This pipeline assumes all required variables are available and interpretable numerically or categorically.
 - The model performs classification on patient nodes using clinical similarities and conditions.
 - Laplacian regularization enforces spatial smoothness.
 - Model can be extended to multi-modal or multi-task settings.
