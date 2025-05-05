@@ -1,6 +1,3 @@
-# LR_GNN
-
-
 # GNN Pipeline for Clinical Patient Classification
 
 This repository provides a full pipeline for transforming clinical datasets into graph structures and training a Graph Neural Network (GNN) for multi-class classification based on chronic condition profiles.
