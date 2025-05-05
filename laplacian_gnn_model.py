@@ -374,7 +374,7 @@ class MyModel(tf.keras.Model):
         return y_pred
 
 
-# Instantiate base model (replace "BaseModel" with the class of current actual model)
+# Instantiate base model
 base_model = GNNNodeClassifier(
     graph_info=graph_info,
     num_classes=num_classes,
