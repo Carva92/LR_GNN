@@ -355,7 +355,7 @@ class MyModel(tf.keras.Model):
         x, A, D = inputs
         y_pred = self.base_model(x)
 
-        # Adjust y_pred to have 600 units
+        # Adjust y_pred to have 600 units (Number of patients)
         y_pred = self.dense(y_pred)
 
         # Modify y_pred to have an extra dimension
@@ -431,14 +431,14 @@ predictions1 = gnn_model.predict(test_inputs)
 
 predictions
 
+# Make individual predictions
 node_id = 125
 node_features = np.array([x_test[node_id]]) # Add an extra dimension to represent a batch size of 1
 node_adjacency = np.array([A_test[node_id]])
 node_degree = np.array([D_test[node_id]])
 
-predictions_138 = np.argmax(gnn_model.predict([node_features, node_adjacency, node_degree]), axis=1)
-
-predictions_138
+predictions_125 = np.argmax(gnn_model.predict([node_features, node_adjacency, node_degree]), axis=1)
+predictions_125
 
 real = np.array(y_test.values.tolist())
 
