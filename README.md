@@ -9,6 +9,7 @@ If you use this code or methodology, please cite the following publication:
 > https://doi.org/10.1016/j.cmpb.2024.108058  
 > [ScienceDirect Link](https://www.sciencedirect.com/science/article/pii/S0169260724000543)
 
+---
 
 This repository provides a full pipeline for transforming clinical datasets into graph structures and training a Graph Neural Network (GNN) for multi-class classification based on chronic condition profiles.
 
