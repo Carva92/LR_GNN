@@ -30,7 +30,8 @@ def reset_random_seeds():
 
 reset_random_seeds()
 
-dataset = fc.read_data('dataset_name.csv')
+# If the dataset is in a different format from ".sas7bdat", change the function "fc.read_data" according to the correct format.
+dataset = fc.read_data('dataset_name.sas7bdat')
 
 patients, conditions_features, data = fc.categorize_data(dataset[0])
 
