@@ -35,8 +35,8 @@ Your dataset must include the following columns per patient:
 ### 1. Format and Clean Your Dataset
 
 ```python
-df = pd.read_csv("your_data.csv")
-patients, features, data = categorize_data(df)
+# If the dataset is in a different format from ".sas7bdat", change the function "fc.read_data" according to the correct format.
+dataset = fc.read_data('dataset_name.sas7bdat')
 ```
 
 - Cleans missing values and duplicates
